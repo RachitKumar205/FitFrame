@@ -13,6 +13,9 @@
             android:name=".views.SignInActivity"
             android:exported="true" />
         <activity
+            android:name=".views.HomeActivity"
+            android:exported="true" />
+        <activity
             android:name=".views.CreateAccountActivity"
             android:exported="true">
             <intent-filter>

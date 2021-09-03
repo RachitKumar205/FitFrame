@@ -38,7 +38,7 @@ class SignInActivity : AppCompatActivity() {
     private fun signInUser() {
         signInEmail = etSignInEmail.text.toString().trim()
         signInPassword = etSignInPassword.text.toString().trim()
-
+        toast("signing you in")
         if (notEmpty()) {
             firebaseAuth.signInWithEmailAndPassword(signInEmail, signInPassword)
                 .addOnCompleteListener { signIn ->
